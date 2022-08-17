@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional Bank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1 class="title">Functional <span class="bank-title">Baap Er Bank</span> </h1>
+    </header>
+
+    <main>
+        <section id="account-box">
+            <div class="deposit">
+                <h3>Deposit</h3>
+                <h1>$<span id="deposit-total">00</span></h1>
+            </div>
+            <div class="withdraw">
+                <h3>Withdraw</h3>
+                <h1>$<span id="withdraw-total">00</span></h1>
+            </div>
+            <div class="balance">
+                <h3>Balance</h3>
+                <h1>$<span id="total-balance">1240</span></h1>
+            </div>
+        </section>
+
+        <section id="withdraw-deposit">
+            <div class="deposit-field">
+                <h3>Your Deposit</h3>
+                <input type="text" name="" id="deposit" placeholder="$ Amount you want to deposit">
+                <button id="deposit-btn">Deposit</button>
+            </div>
+            <div class="withdraw-field">
+                <h3>Your Withdraw</h3>
+                <input type="text" name="" id="withdraw" placeholder="$ Amount you want to withdraw">
+                <button id="withdraw-btn">Withdraw</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="./functions/utility.js"></script>
+    <script src="./functions/deposit.js"></script>
+    <script src="./functions/withdraw.js"></script>
+
+</body>
+</html>
